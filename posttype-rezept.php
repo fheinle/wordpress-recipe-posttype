@@ -5,23 +5,28 @@ Description: Create custom post type for cooking recipes
 Custom Taxonomy: Rezept-Art
 Custom Post Type: Rezept */
 
+function init_posttyperezept_plugin () {
+  load_plugin_textdomain('posttype-rezept', false, basename(dirname(__file__)));
+}
+
+add_action('init', 'init_posttyperezept_plugin');
 add_action('init', 'register_rezept');
 
 function register_rezept() {
   $labels = array(
-    'name'                  => _x( 'Rezepte', 'llgrid-rezepte'),
-    'description'           => _x( 'Unsere leckeren Rezepte', 'llgrid-rezepte'),
-    'singular_name'         => _x( 'Rezept', 'llgrid-rezepte'),
-    'add_new'               => _x( 'Hinzufügen', 'llgrid-rezepte'),
-    'add_new_item'          => _x( 'Rezept hinzufügen', 'llgrid-rezepte'),
-    'edit_item'             => _x( 'Rezepte bearbeiten', 'llgrid-rezepte'),
-    'new_item'              => _x( 'Neues Rezept', 'llgrid-rezepte'),
-    'view_item'             => _x( 'Rezept anzeigen', 'llgrid-rezepte'),
-    'search_item'           => _x( 'Rezept suchen', 'llgrid-rezepte'),
-    'not_found'             => _x( 'Keine Rezepte gefunden', 'llgrid-rezepte'),
-    'not_found_in_trash'    => _x( 'Keine Rezepte im Papierkorb gefunden', 'llgrid-rezepte'),
+    'name'                  => _x( 'Rezepte', 'posttype-rezept'),
+    'description'           => _x( 'Unsere leckeren Rezepte', 'posttype-rezept'),
+    'singular_name'         => _x( 'Rezept', 'posttype-rezept'),
+    'add_new'               => _x( 'Hinzufügen', 'posttype-rezept'),
+    'add_new_item'          => _x( 'Rezept hinzufügen', 'posttype-rezept'),
+    'edit_item'             => _x( 'Rezepte bearbeiten', 'posttype-rezept'),
+    'new_item'              => _x( 'Neues Rezept', 'posttype-rezept'),
+    'view_item'             => _x( 'Rezept anzeigen', 'posttype-rezept'),
+    'search_item'           => _x( 'Rezept suchen', 'posttype-rezept'),
+    'not_found'             => _x( 'Keine Rezepte gefunden', 'posttype-rezept'),
+    'not_found_in_trash'    => _x( 'Keine Rezepte im Papierkorb gefunden', 'posttype-rezept'),
     'parent_item_colon'     => '',
-    'menu_name'             => _x( 'Rezepte', 'llgrid-rezepte')
+    'menu_name'             => _x( 'Rezepte', 'posttype-rezept')
   );
   $args = array(
     'labels'                => $labels,
@@ -80,33 +85,33 @@ add_action('add_meta_boxes', 'add_recipe_meta_box');
 
 $recipe_fields = array(
   array(
-    'name'  => __( 'Rezept-Art', 'llgrid-rezepte' ),
-    'desc'  => __( 'Art des Rezepts, etwa Nachspeise', 'llgrid-rezepte'),
+    'name'  => __( 'Rezept-Art', 'posttype-rezept' ),
+    'desc'  => __( 'Art des Rezepts, etwa Nachspeise', 'posttype-rezept'),
     'id'    => 'recipe_type',
     'type'  => 'select',
     'options'=> array(
       'vorspeise' => array(
-        'label' => __( 'Vorspeise', 'llgrid-rezepte'),
+        'label' => __( 'Vorspeise', 'posttype-rezept'),
         'value' => 'vorspeise'
       ),
       'hauptspeise' => array(
-        'label' => __( 'Hauptspeise', 'llgrid-rezepte'),
+        'label' => __( 'Hauptspeise', 'posttype-rezept'),
         'value' => 'hauptspeise'
       ),
       'nachspeise' => array(
-        'label' => __( 'Nachspeise', 'llgrid-rezepte'),
+        'label' => __( 'Nachspeise', 'posttype-rezept'),
         'value' => 'nachspeise'
       ),
       'snack' => array(
-        'label' => __( 'Snack', 'llgrid-rezepte'),
+        'label' => __( 'Snack', 'posttype-rezept'),
         'value' => 'snack'
       )
     )
   ),
 
   array(
-    'name'  => __( 'Zutaten', 'llgrid-rezepte' ),
-    'desc'  => __( 'Eine Zutat pro Zeile', 'llgrid-rezepte' ),
+    'name'  => __( 'Zutaten', 'posttype-rezept' ),
+    'desc'  => __( 'Eine Zutat pro Zeile', 'posttype-rezept' ),
     'id'    => 'recipe_ingredients',
     'type'  => 'textarea',
   ),
