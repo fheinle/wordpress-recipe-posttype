@@ -1,0 +1,129 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Recipe Post Type v\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-04-12 12:08:54+0000\n"
+"Last-Translator: florian <ll@planet-tiax.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: posttype-rezept.php:17
+#: posttype-rezept.php:29
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezepte"
+msgstr ""
+
+#: posttype-rezept.php:18
+#@ default
+msgctxt "posttype-rezept"
+msgid "Unsere leckeren Rezepte"
+msgstr ""
+
+#: posttype-rezept.php:19
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezept"
+msgstr ""
+
+#: posttype-rezept.php:20
+#@ default
+msgctxt "posttype-rezept"
+msgid "Hinzufügen"
+msgstr ""
+
+#: posttype-rezept.php:21
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezept hinzufügen"
+msgstr ""
+
+#: posttype-rezept.php:22
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezepte bearbeiten"
+msgstr ""
+
+#: posttype-rezept.php:23
+#@ default
+msgctxt "posttype-rezept"
+msgid "Neues Rezept"
+msgstr ""
+
+#: posttype-rezept.php:24
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezept anzeigen"
+msgstr ""
+
+#: posttype-rezept.php:25
+#@ default
+msgctxt "posttype-rezept"
+msgid "Rezept suchen"
+msgstr ""
+
+#: posttype-rezept.php:26
+#@ default
+msgctxt "posttype-rezept"
+msgid "Keine Rezepte gefunden"
+msgstr ""
+
+#: posttype-rezept.php:27
+#@ default
+msgctxt "posttype-rezept"
+msgid "Keine Rezepte im Papierkorb gefunden"
+msgstr ""
+
+#: posttype-rezept.php:88
+#@ posttype-rezept
+msgid "Rezept-Art"
+msgstr "Recipe type"
+
+#: posttype-rezept.php:89
+#@ posttype-rezept
+msgid "Art des Rezepts, etwa Nachspeise"
+msgstr "Type of recipe, e.g. snack"
+
+#: posttype-rezept.php:94
+#@ posttype-rezept
+msgid "Vorspeise"
+msgstr "starter"
+
+#: posttype-rezept.php:98
+#@ posttype-rezept
+msgid "Hauptspeise"
+msgstr "entree"
+
+#: posttype-rezept.php:102
+#@ posttype-rezept
+msgid "Nachspeise"
+msgstr "Dessert"
+
+#: posttype-rezept.php:106
+#@ posttype-rezept
+msgid "Snack"
+msgstr "snack"
+
+#: posttype-rezept.php:113
+#@ posttype-rezept
+msgid "Zutaten"
+msgstr "Ingredients"
+
+#: posttype-rezept.php:114
+#@ posttype-rezept
+msgid "Eine Zutat pro Zeile"
+msgstr "One ingredient per line"
+
