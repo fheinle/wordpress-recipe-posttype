@@ -47,14 +47,6 @@ function register_rezept() {
 
 function register_rezept_taxonomies() {
   register_taxonomy(
-    'Rezept-Art',
-    'rezept',
-    array(
-      'label' => 'Rezept-Art',
-      'rewrite' => array('slug' => 'rezepte'),
-    )
-  );
-  register_taxonomy(
     'Allergiefrei',
     'rezept',
     array(
